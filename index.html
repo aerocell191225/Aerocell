@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aerocell</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
     <style>
         /* --- 1. BASES --- */
         body, html {
             margin: 0;
             padding: 0;
-            font-family: Roboto, Helvetica, Arial, sans-serif;
+            
+            /* CHANGEMENT DE POLICE ICI */
+            font-family: 'Roboto', sans-serif;
+            
             background-color: #ffffff;
             scroll-behavior: smooth;
             color: #333;
@@ -78,10 +86,7 @@
             max-width: 900px; 
             width: 100%;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            
-            /* ICI : On assure que le texte est justifié */
             text-align: justify; 
-            
             box-sizing: border-box;
         }
 
@@ -224,7 +229,6 @@
                 border-width: 3px; 
             }
             
-            /* MODIFICATION ICI : On force le justifié aussi sur mobile */
             .text-box p { font-size: 0.95rem; text-align: justify; }
             
             .text-box h2 { font-size: 1.5rem; }
