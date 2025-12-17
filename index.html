@@ -11,13 +11,15 @@
 
     <style>
         /* --- 1. BASES --- */
+        
+        /* ICI : On force ROBOTO sur TOUS les éléments du site avec !important */
+        * {
+            font-family: 'Roboto', sans-serif !important;
+        }
+
         body, html {
             margin: 0;
             padding: 0;
-            
-            /* CHANGEMENT DE POLICE ICI */
-            font-family: 'Roboto', sans-serif;
-            
             background-color: #ffffff;
             scroll-behavior: smooth;
             color: #333;
@@ -86,7 +88,7 @@
             max-width: 900px; 
             width: 100%;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            text-align: justify; 
+            text-align: justify; /* Justifié sur PC */
             box-sizing: border-box;
         }
 
@@ -229,6 +231,7 @@
                 border-width: 3px; 
             }
             
+            /* Justifié forcé sur mobile aussi */
             .text-box p { font-size: 0.95rem; text-align: justify; }
             
             .text-box h2 { font-size: 1.5rem; }
