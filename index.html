@@ -61,11 +61,8 @@
         /* --- 5. STYLE COMMUN POUR LES TEXTES (INTRO & OUTRO) --- */
         .text-section {
             min-height: 100vh; 
-            
-            /* --- CORRECTION ICI : MARGES RÉDUITES --- */
-            padding-top: 130px;  /* Suffisant pour être sous le header */
-            padding-bottom: 60px; /* Juste ce qu'il faut en bas */
-            
+            padding-top: 130px; 
+            padding-bottom: 60px;
             padding-left: 20px; padding-right: 20px;
             display: flex; justify-content: center; align-items: center; flex-direction: column;
             background-color: #ffffff; 
@@ -77,14 +74,14 @@
             background-color: #fdfbf7; 
             border: 4px solid #fdfbf7; 
             border-radius: 12px; 
-            
-            /* Padding interne réduit légèrement pour gagner de la place */
             padding: 30px; 
-            
             max-width: 900px; 
             width: 100%;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            
+            /* ICI : On assure que le texte est justifié */
             text-align: justify; 
+            
             box-sizing: border-box;
         }
 
@@ -92,14 +89,14 @@
             text-align: center; 
             color: #00431f; 
             margin-top: 0; 
-            margin-bottom: 25px; /* Réduit un peu */
+            margin-bottom: 25px;
             font-size: 2rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .text-box p {
-            margin-bottom: 15px; /* Espace entre paragraphes réduit un peu */
+            margin-bottom: 15px;
             font-size: 1.05rem;
         }
         .text-box p:last-child { margin-bottom: 0; }
@@ -213,24 +210,25 @@
            ========================================= */
         @media screen and (max-width: 768px) {
             
-            /* Header Mobile */
             .main-header { height: 60px; padding: 0 10px; }
             .header-logo-img { height: 70px; top: -5px; } 
             .progress-container { top: 60px; }
 
             .text-section { 
                 min-height: auto; 
-                padding-top: 100px; /* Réduit aussi sur mobile */
+                padding-top: 100px; 
                 padding-bottom: 60px; 
             }
             .text-box { 
-                padding: 20px; /* Padding interne réduit */
+                padding: 20px; 
                 border-width: 3px; 
             }
-            .text-box p { font-size: 0.95rem; text-align: left; }
+            
+            /* MODIFICATION ICI : On force le justifié aussi sur mobile */
+            .text-box p { font-size: 0.95rem; text-align: justify; }
+            
             .text-box h2 { font-size: 1.5rem; }
 
-            /* --- SÉQUENCE MOBILE --- */
             .scroll-sequence-container { height: auto; background-color: #7ac38b; }
 
             .sticky-wrapper {
