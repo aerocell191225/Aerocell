@@ -134,12 +134,12 @@
             display: flex; gap: 30px; width: 90%; max-width: 1200px; justify-content: space-between;
         }
         
-        /* --- STYLE DES CADRES (MIS À JOUR) --- */
+        /* --- STYLE DES CADRES --- */
         .fade-image {
             width: 100%; height: 350px; border-radius: 8px;
             background-color: #fff; 
             
-            /* MODIFICATION ICI : FLEX COLUMN POUR EMPILER TITRE + IMAGE */
+            /* FLEX COLUMN POUR EMPILER TITRE + IMAGE */
             display: flex; 
             flex-direction: column;
             align-items: center; 
@@ -155,7 +155,7 @@
             box-sizing: border-box;
         }
 
-        /* NOUVEAU : STYLE DES IMAGES DANS LES CADRES */
+        /* STYLE DES IMAGES DANS LES CADRES */
         .fade-image img { 
             width: auto;
             max-width: 100%; 
@@ -270,7 +270,6 @@
                 height: auto; align-items: center; 
             }
 
-            /* On agrandit un peu les cadres sur mobile */
             .fade-image {
                 width: 100%; height: 280px;
             }
@@ -315,7 +314,7 @@
                 
                 <div class="fade-image">
                     Déchets naturels
-                    <img src="img1.jpeg" alt="Déchets">
+                    <img src="img1.jpg" alt="Déchets">
                 </div>
 
                 <div class="fade-image">
@@ -325,7 +324,7 @@
 
                 <div class="fade-image">
                     Isolation
-                    <img src="img3.jpeg" alt="Isolation">
+                    <img src="img3.jpg" alt="Isolation">
                 </div>
 
                 <div class="fade-image">
@@ -351,7 +350,10 @@
             <p>Et là, “Eureka!”. Nous avions la solution entre les mains. La cellulose! Le polymère organique le plus abondant sur Terre, composant de 15 à 50 % les plantes. Aerocell venait enfin de développer ses premières feuilles pour croître et devenir acteur dans la lutte contre le changement climatique et la valorisation des déchets verts.</p>
             
             <p>Aerocell est avant tout une initiative étudiante responsable, baignant dans l’esprit de la start-up nation, dans le refus de la passivité face aux enjeux climatiques d’aujourd’hui et de demain. Notre cryocell est le fruit de toutes ces longues réflexions, de semaines et de mois acharnés de développement du produit final, où chaque membre de l’équipe s’est donné et se donne toujours à 1000 % pour proposer une alternative saine pour l’environnement dans l’isolation.</p>
-           
+            
+            <div class="punchline">
+                "Quand la vie te donne des tournesols, fais-en une tournesolade pour créer l’isolant biosourcé de demain."
+            </div>
         </div>
     </div>
 
@@ -359,14 +361,18 @@
         <div class="footer-container">
             <div class="footer-left">
                 <h3>Contact</h3>
-                <div class="footer-info-item">118 Route de Narbonne, 31400 Toulouse</div>
-                <div class="footer-info-item">aerocell191225@gmail.fr</div>
-                <div class="footer-info-item">+33 7 66 38 40 21</div>
-                <div class="footer-info-item">https://linkedin.com/in/aerocell-5947453a0</div>
+                <div class="footer-info-item">📍 123 Avenue de l'Innovation, Toulouse</div>
+                <div class="footer-info-item">📧 contact@aerocell.fr</div>
+                <div class="footer-info-item">📞 05 61 00 00 00</div>
+                <div class="footer-info-item">💼 LinkedIn: Aerocell-StartUp</div>
             </div>
+            
             <div class="footer-right">
-                <button class="newsletter-btn">S'inscrire à la Newsletter</button>
+                <a href="newsletter.pdf" target="_blank" style="text-decoration:none;">
+                    <button class="newsletter-btn">Lire la Newsletter (PDF)</button>
+                </a>
             </div>
+            
         </div>
     </footer>
 
