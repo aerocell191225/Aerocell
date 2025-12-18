@@ -201,6 +201,18 @@
             color: #e0e0e0;
         }
 
+        /* Style spécifique pour le lien Linkedin */
+        .linkedin-link {
+            color: #6fff7b; /* Vert Aerocell */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .linkedin-link:hover {
+            color: #ffffff; /* Devient blanc au survol */
+            text-decoration: underline;
+        }
+
         .footer-right {
             display: flex;
             align-items: center;
@@ -357,7 +369,13 @@
                 <div class="footer-info-item">118 route de Narbonne, 31400 Toulouse</div>
                 <div class="footer-info-item">aerocel91225@gmail.com</div>
                 <div class="footer-info-item">+33 7 66 38 40 21</div>
-                <div class="footer-info-item">Linkedin</div>
+                
+                <div class="footer-info-item">
+                    <a href="https://www.linkedin.com/" target="_blank" class="linkedin-link">
+                        Suivez-nous sur Linkedin
+                    </a>
+                </div>
+
             </div>
             
             <div class="footer-right">
